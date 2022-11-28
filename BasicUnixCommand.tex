@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{listings}
+\begin{document}
+This will be a document with some information on Unix commands we have seen in class.
+
+\section{Commands 8/24-26/22}
+\begin{enumerate}
+\item clear           : will clear the terminal so you can have a fresh starting point.
+\item cd              : will show directory path
+\item cd\verb'<path>' : cahnges your command line to be on the stated path
+\item mkdir           : when given a name as a argument this creates a directory at your specified path position
+\item ls              : will list all the stuff in current directory
+	\begin{enumerate}
+		\item -a: lists hidden files that with a "."
+		\item -l: list files permission and sizes
+	\end{enumerate}
+
+\item nano            : this is a simple text editor
+\item man             : this searches the manual pages for information on linux commands
+\end{enumerate}
+
+
+\section{New Commands 8/29/22}
+\begin{enumerate}
+  \item pwd               : Print Working Directory
+  \item \verb'<tab>'      : Auto-Complete for whatever is presented on the path
+  \item \verb'<Up Arrow> ': This puts last used command in terminal, cycle through history of used commands
+  \item cp                : Copy file from one place to another
+  \item rm                : remove file name
+  \begin{enumerate}
+    \item rm *.pdf         : removes all files with the extension of '.pdf'
+    \item rm -R directory  : removes files recursively from a directory
+  \end{enumerate}
+
+\item top              : shows processes open and running on a machine as well as the process ids (PID) number, Use 'Q' to quit top
+\begin{verbatim}
+tunno@Savage> top -U <Lname>
+\end{verbatim}
+This shows your job running on savage
+\item Kill: use this with PID, this ends the job on the machine
+\end{enumerate}
+
+\section{New commands 8/31/22}
+Some new fun things:
+\subsection{the {\bf head} and {\bf tail} commands:} 
+\begin{verbatim}
+tunno@savage> head -n filename
+\end{verbatim}
+This displays to standard out the first  $n$ lines of the specific file. Similar for the {\it tail} command
+
+Note we can use the  \verb'>' % This is a comment in tex (Greater than symbol)
+To divert information from the terminal stream to a specified file.
+
+\subsection*{Other ways to Look at Files}
+You can use {\it cat} to dump all the contents of a file to standard out. The tools:
+\begin{enumerate}
+\item less: file viewer(scroll with arrows)
+\item more: file viewer(view pages with spacebar/tab)
+\end{enumerate}
+give you a little more refinement when looking at the file content. These are not editors
+%Less is really better than more, as less has more features
+
+We also talked about the {\it history} command. The history command allows you to see the $n$ comands executed in the terminal so you know what you did
+ last time or creating log files.
+
+
+\section*{Notes 9/2/22}
+This will document using a listing inside of a document
+\begin{lstlisting}[language=bash]
+ssh tunno@savage.nsm.iup.edu
+\end{lstlisting}
+This type works for all types of code. Say you had python script you wanted to document.
+\begin{lstlisting}[language=python, caption=Basic python script"]
+for i in range(10):
+	print("Python is better than Java")
+	print("especially on Unix")
+
+windows = 10
+unix    = 11
+if (windows < unix):
+	print("You know its true")
+\end{lstlisting}
+
+I would like to input information or code from some other file into this document.
+\lstinputlisting[language=bash]{ShortHistory.log}
+
+
+\subsection*{Lets include all the text for this document:}
+Here is a listing showing the \LaTeX\ markup for the document itself
+\lstinputlisting[language=tex]{BasicUnixCommand.tex}
+
+
+\end{document}
