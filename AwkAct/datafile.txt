@@ -1,0 +1,7 @@
+John Smith History 30 40 50 60
+Joe Went Engilish 40 45 55 70
+Joby Jacobs Math 75 85 99 94
+Stan Lee Comics 55 65 88 79
+Jack Kerby Physics 65 88 54 82
+Jim Lee Comics 88 76 32 78
+Scott Summers Math 65 98 45 85
