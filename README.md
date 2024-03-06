@@ -4,7 +4,11 @@
         $ ./<file.sh> 
 
     + BasicUnixCommand.tex
-        - In bash scripts you need to use unix commands, this tex file has some basic unix commands.
+        - In bash scripts you need to use unix commands, this tex file has some basic unix commands and definations
+        - To edit the script use:
+            $ nano BasicUnixCommand.tex
+        - To view as PDF, run:
+            $ pdflatex BasicUnixCommand.tex
 
 # Basic
     + Adding > .sh
@@ -34,3 +38,18 @@
     
     + PDFlatex > .sh
         - This Program's example will turn any .tex file into a pdf this program will also remove the aux and log file
+
+# AwkAct
+    + AwkScript > .sh
+        - To manipulate data and generate reports for a file 
+
+    + Datafile > .txt
+        - Datafile used in awkscript.sh, which includes a first name, last name, a class, and 4 grades
+
+# PyBash
+    + PyScript > .py
+        - Script that uses bash within the python code using 'import os'
+        - When running this program you need to use: 
+            $ Python3 PyScript.py
+        instead of:
+            $ ./PyScript.py
